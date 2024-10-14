@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-5 lg:space-y-0">
         {/* Left Section */}
         <div className="flex-1 lg:p-24 p-6 space-y-4 text-left">
-          <h1 className="scroll-m-20 text-3xl lg:text-6xl font-semibold tracking-tight">
+          <h1 className="scroll-m-20 text-3xl lg:text-5xl font-semibold tracking-tight">
             We're Pakistan's 1st digital real estate investment platform
           </h1>
           <h4 className="scroll-m-20 text-lg lg:text-2xl font-medium tracking-tight">
@@ -61,7 +61,7 @@ const Hero = () => {
 
       {/* Cards Section */}
       
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[90%] lg:w-[75%] absolute bg-white lg:-bottom-[40%] left-0 right-0 mx-auto text-gray-800 shadow-xl rounded-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[90%] lg:w-[75%] absolute bg-white lg:-bottom-[30%] left-0 right-0 mx-auto text-gray-800 shadow-xl rounded-lg">
           {content.map((item, index) => (
             <div
               key={index}
