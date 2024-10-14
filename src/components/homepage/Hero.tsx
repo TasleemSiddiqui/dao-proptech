@@ -42,13 +42,13 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-5 lg:space-y-0">
         {/* Left Section */}
         <div className="flex-1 lg:p-24 p-6 space-y-4 text-left">
-          <h1 className="scroll-m-20 text-3xl lg:text-5xl font-semibold tracking-tight">
+          <h1 className="scroll-m-20 text-3xl lg:text-6xl font-semibold tracking-tight">
             We're Pakistan's 1st digital real estate investment platform
           </h1>
-          <h4 className="scroll-m-20 text-lg lg:text-xl font-medium tracking-tight">
+          <h4 className="scroll-m-20 text-lg lg:text-2xl font-medium tracking-tight">
             Start investing flexibly, wherever you are in the world
           </h4>
-          <Button className="text-lg py-3 lg:py-4 mt-5 font-semibold text-gray-950 w-fit lg:w-auto">
+          <Button className="text-lg py-3 lg:py-7 lg:px-4 mt-5 font-semibold w-fit lg:w-auto lg:text-xl">
             Begin Now
           </Button>
         </div>
