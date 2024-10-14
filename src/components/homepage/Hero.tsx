@@ -41,11 +41,11 @@ const Hero = () => {
     <section className="relative bg-gradient-to-tr from-blue-800 to-teal-400 h-fit w-full text-white lg:p-7 p-5">
       <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-5 lg:space-y-0">
         {/* Left Section */}
-        <div className="flex-1 lg:p-24 p-6 space-y-4 text-left">
-          <h1 className="scroll-m-20 text-3xl lg:text-5xl font-semibold tracking-tight">
+        <div className="flex-1 lg:p-22 md:p-24 p-6 space-y-4 text-left">
+          <h1 className="scroll-m-20 text-3xl md:text-5xl font-semibold lg:tracking-tight">
             We're Pakistan's 1st digital real estate investment platform
           </h1>
-          <h4 className="scroll-m-20 text-lg lg:text-2xl font-medium tracking-tight">
+          <h4 className="scroll-m-20 text-lg md:text-2xl  font-medium lg:tracking-tight">
             Start investing flexibly, wherever you are in the world
           </h4>
           <Button className="text-lg py-3 lg:py-7 lg:px-4 mt-5 font-semibold w-fit lg:w-auto lg:text-xl">
@@ -65,19 +65,19 @@ const Hero = () => {
           {content.map((item, index) => (
             <div
               key={index}
-              className="px-5 py-10 space-y-2 flex flex-col justify-center items-center text-center w-full border"
+              className="px-5 py-10 space-y-2 flex flex-col justify-center items-center text-center w-full border group  "
             >
               <Image
                 src={item.img}
                 alt={item.title}
                 height={80}
                 width={80}
-                className="max-h-[80px] w-auto"
+                className="max-h-[80px] w-auto group-hover:scale-105 duration-200 "
               />
-              <h1 className="text-xl lg:text-2xl font-semibold line-clamp-2">
+              <h1 className="text-xl lg:text-2xl font-semibold line-clamp-2 group-hover:scale-105 duration-200 ">
                 {item.title}
               </h1>
-              <p className="text-sm font-medium line-clamp-4 text-gray-500">
+              <p className="text-sm font-medium line-clamp-4 text-gray-500 group-hover:scale-105 duration-200">
                 {item.text}
               </p>
             </div>

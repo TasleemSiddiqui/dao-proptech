@@ -1,14 +1,12 @@
 import Hero from "@/components/homepage/Hero";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Investment from "@/components/homepage/investment";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="h-screen w-full">
-
-      </div>
+      <div className="h-[55rem] md:h-[30rem] lg:h-[15rem] w-full"></div>
+      <Investment/>
     </main>
   );
 }
