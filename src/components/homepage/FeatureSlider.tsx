@@ -83,7 +83,7 @@ function FeatureSlider() {
   };
 
   return (
-    <section className="w-full  bg-slate-100 h-fit p-10">
+    <section className="w-full  bg-slate-100 h-fit p-10 mt-10">
       <HeadingBar title="Features" subTitle="" />
       <div className="slider-container">
         <Slider {...settings}>

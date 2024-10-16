@@ -108,7 +108,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="px-4 py-8 bg-slate-100">
+    <div className="px-4 py-8 ">
       <HeadingBar
         title="Testimonials"
         subTitle="Sounds unreal? Listen to what our loyal investors have to say about their journey with us."
