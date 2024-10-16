@@ -8,6 +8,27 @@ body {
 li{
   @apply hover:text-primary duration-500  
 }
+/* .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.slider-container {
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+.slide {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+} */
 
 @layer utilities {
   .text-balance {

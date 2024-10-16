@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Image, { StaticImageData } from "next/image";
-import heroimg from "@/public/homePage/hero.png";
-import img1 from "@/public/homePage/Verified.svg"
-import img2 from "@/public/homePage/blockchain.svg"
-import img3 from "@/public/homePage/Value-based-Pricing.svg"
-import img4 from "@/public/homePage/Personalized-Plans.svg"
+import heroimg from "@/../public/homePage/hero.png";
+import img1 from "@/../public/homePage/Verified.svg"
+import img2 from "@/../public/homePage/blockchain.svg"
+import img3 from "@/../public/homePage/Value-based-Pricing.svg"
+import img4 from "@/../public/homePage/Personalized-Plans.svg"
 
 interface Idata {
   img: string | StaticImageData;

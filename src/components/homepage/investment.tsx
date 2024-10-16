@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import HeadingBar from "./HeadingBar";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
-import img1 from "@/public/homePage/journey_signup-b.svg";
-import img2 from "@/public/homePage/journey_invest-b.svg";
-import img3 from "@/public/homePage/journey_track-b.svg";
-import mockup from "@/public/homePage/Mobile-Mock-Up-1.jpg"
+// import img1 from "@/../public/homePage/journey_signup-b.svg";
+// import img2 from "@/public/homePage/journey_invest-b.svg";
+// import img3 from "@/public/homePage/journey_track-b.svg";
+import mockup from "@/../public/homePage/Mobile-Mock-Up-1.jpg"
 import { Button } from "../ui/button";
 import { Progress } from "../ui/progress";
 
@@ -18,17 +18,17 @@ interface Idata {
 
 const content: Idata[] = [
   {
-    img: img1,
+    img:"/homePage/journey_signup-b.svg",
     title: "Sign Up",
     text: "Explore real estate projects that meet your investment criteria",
   },
   {
-    img: img2,
+    img:"/homePage/journey_invest-b.svg",
     title: "Invest",
     text: "Build your real estate portfolio from a low initial investment and keep accumulating",
   },
   {
-    img: img3,
+    img:"/homePage/journey_track-b.svg",
     title: "Check Progress",
     text: "Keep a track of your investments through your personal dashboard",
   },

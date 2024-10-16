@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import logo from "@/public/DAO-PropTech-Primary-logo@2x.png";
+import logo from "@/../public/DAO-PropTech-Primary-logo@2x.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";

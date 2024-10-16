@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/footer-Dao-PropTech-secondary-logo-b@2x.png";
+import logo from "@/../public/footer-Dao-PropTech-secondary-logo-b@2x.png";
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
