@@ -41,28 +41,28 @@ const Counter = () => {
       </div>
       <div className="flex justify-around items-center">
         <div className="flex flex-col justify-between items-center text-center">
-            <h1 className="text-3xl lg:text-5xl text-primary font-semibold">
+            <h1 className="text-2xl lg:text-5xl text-primary font-semibold">
             38,032
             </h1>
-            <p className="lg:text-xl text-base text-gray-500 ">
+            <p className="lg:text-xl text-sm text-gray-500 ">
             Platfrom Users
 
             </p>
         </div>
         <div className="flex flex-col justify-between items-center text-center">
-            <h1 className="text-3xl lg:text-5xl text-primary font-semibold">
+            <h1 className="text-2xl lg:text-5xl text-primary font-semibold">
             918,719
             </h1>
-            <p className="lg:text-xl text-base text-gray-500 ">
+            <p className="lg:text-xl text-sm text-gray-500 ">
             No. of sq. ft. sold to date
 
             </p>
         </div>
         <div className="flex flex-col justify-between items-center text-center">
-            <h1 className="text-3xl lg:text-5xl text-primary font-semibold">
+            <h1 className="text-2xl lg:text-5xl text-primary font-semibold">
             3,602
             </h1>
-            <p className="lg:text-xl text-base text-gray-500 ">
+            <p className="lg:text-xl text-sm text-gray-500 ">
             Transactions
             </p>
         </div>

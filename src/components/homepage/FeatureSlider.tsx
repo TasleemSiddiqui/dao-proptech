@@ -13,41 +13,20 @@ interface IImages {
 }
 
 const imgSlider: IImages[] = [
-  {
-    img: "/feature-slider/Br (1).png",
-    name: "feature1",
-  },
-  {
-    img: "/feature-slider/Br.png",
-    name: "feature2",
-  },
-  {
-    img: "/feature-slider/C-1.png",
-    name: "feature3",
-  },
-  {
-    img: "/feature-slider/CA-1.png",
-    name: "feature4",
-  },
-  {
-    img: "/feature-slider/D-2.png",
-    name: "feature5",
-  },
-  {
-    img: "/feature-slider/F-1.png",
-    name: "feature6",
-  },
-  {
-    img: "/feature-slider/T-1.png",
-    name: "feature7",
-  },
+  { img: "/feature-slider/Br (1).png", name: "feature1" },
+  { img: "/feature-slider/Br.png", name: "feature2" },
+  { img: "/feature-slider/C-1.png", name: "feature3" },
+  { img: "/feature-slider/CA-1.png", name: "feature4" },
+  { img: "/feature-slider/D-2.png", name: "feature5" },
+  { img: "/feature-slider/F-1.png", name: "feature6" },
+  { img: "/feature-slider/T-1.png", name: "feature7" },
 ];
 
 function FeatureSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
-    className: "center w-full lg:w-[70%] mx-auto  ",
+    className: "center w-full lg:w-[70%] mx-auto",
     centerMode: true,
     infinite: true,
     centerPadding: "10px",
@@ -55,13 +34,9 @@ function FeatureSlider() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,
-    beforeChange: (current: number, next: number) => {
-      setActiveIndex(next);
-    },
+    beforeChange: (current: number, next: number) => setActiveIndex(next),
     dots: false,
-
     slidesToScroll: 1,
-
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -69,21 +44,28 @@ function FeatureSlider() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          centerPadding: "50px",
+          centerPadding: "10px",
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          centerPadding: "20px",
+          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "10px",
         },
       },
     ],
   };
 
   return (
-    <section className="w-full  bg-slate-100 h-fit p-10 mt-10 py-[10%]">
+    <section className="w-full bg-slate-100 p-10 py-[10%]">
       <HeadingBar title="Features" subTitle="" />
       <div className="slider-container">
         <Slider {...settings}>
@@ -92,16 +74,18 @@ function FeatureSlider() {
               key={index}
               className={`slide ${
                 activeIndex === index ? "active" : ""
-              } my-[10%] mx-4`}
+              } my-[10%] lg:mx-4`}
             >
               <Image
                 src={item.img}
                 alt={item.name}
                 height={200}
                 width={200}
-                className={`md:max-w-[200px] lg:max-w-[300px] max-w-[150px] object-cover rounded-md transition-transform duration-500  px-6 ${
-                  activeIndex === index ? "md:scale-150 scale-150" : "md:scale-50 scale-50"
-                }`} 
+                className={`md:max-w-[200px] lg:max-w-[300px] max-w-[100px] object-cover rounded-md transition-transform duration-500 px-2 md:px-6 ${
+                  activeIndex === index
+                    ? "md:scale-150 scale-125"
+                    : "md:scale-100 scale-75"
+                }`}
               />
             </div>
           ))}
@@ -116,7 +100,6 @@ function FeatureSlider() {
   );
 }
 
-// Custom Dots Component
 const CustomDots = ({
   activeIndex,
   totalSlides,
@@ -131,6 +114,7 @@ const CustomDots = ({
       {Array.from({ length: totalSlides }).map((_, index) => (
         <button
           key={index}
+         
           onClick={() => onDotClick(index)}
           style={{
             width: "16px",
@@ -147,20 +131,19 @@ const CustomDots = ({
     </div>
   );
 };
-// Custom Next Arrow
+
 const NextArrow = (props: any) => {
   const { onClick } = props;
   return (
     <button
-      className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-500 p-3 rounded-full text-white hover:bg-gray-500/50"
+      className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-500   p-3 rounded-full text-white hover:bg-gray-500/50"
       onClick={onClick}
     >
-      <ArrowRight />
+      <ArrowRight size={16} />
     </button>
   );
 };
 
-// Custom Previous Arrow
 const PrevArrow = (props: any) => {
   const { onClick } = props;
   return (
@@ -168,7 +151,7 @@ const PrevArrow = (props: any) => {
       className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-500 p-3 rounded-full text-white hover:bg-gray-500/50"
       onClick={onClick}
     >
-      <ArrowLeft />
+      <ArrowLeft size={16}  />
     </button>
   );
 };
