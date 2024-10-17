@@ -83,7 +83,7 @@ function FeatureSlider() {
   };
 
   return (
-    <section className="w-full  bg-slate-100 h-fit p-10 mt-10">
+    <section className="w-full  bg-slate-100 h-fit p-10 mt-10 py-[10%]">
       <HeadingBar title="Features" subTitle="" />
       <div className="slider-container">
         <Slider {...settings}>
@@ -99,8 +99,8 @@ function FeatureSlider() {
                 alt={item.name}
                 height={200}
                 width={200}
-                className={`md:max-w-[200px] lg:max-w-[300px] max-w-[100px] object-cover rounded-md transition-transform duration-300  px-6 ${
-                  activeIndex === index ? "scale-150" : "scale-100"
+                className={`md:max-w-[200px] lg:max-w-[300px] max-w-[150px] object-cover rounded-md transition-transform duration-500  px-6 ${
+                  activeIndex === index ? "md:scale-150 scale-150" : "md:scale-50 scale-50"
                 }`} 
               />
             </div>

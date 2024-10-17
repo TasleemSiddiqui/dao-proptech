@@ -20,7 +20,7 @@ const Counter = () => {
 
   return (
     <section 
-    className="w-full h-auto md:space-y-5 md:p-10 p-5 mt-10"
+    className="w-full h-auto md:space-y-5 md:p-10 p-5 mt-10 py-[10%]"
       style={{
         backgroundImage: 'url("/vecteezy_world-map_36643287.svg")', 
         backgroundSize: "contain",  

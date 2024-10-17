@@ -47,13 +47,13 @@ const Investment = () => {
 
 
   return (
-    <section className="px-[10%] py-[5%]">
+    <section className="px-[10%] py-[10%]">
       <HeadingBar
         title={`What's in it for you?`}
         subTitle={`We enable real estate investments for everyone - Browse all qualified projects in one place`}
         // style={`lg:mt-[20%]`}
       />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 p-5  ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 gap-y-6 p-5  ">
         {content.map((item, index) => (
           <div
             key={index}
