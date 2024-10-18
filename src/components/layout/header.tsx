@@ -29,7 +29,7 @@ const Header = () => {
           <Link href={"/"}>Home</Link>
         </li>
         <li>
-          <Link href={"/"}>About us</Link>
+          <Link href={"/about-us"}>About us</Link>
         </li>
         <li>
           <Link href={"/"}>Project</Link>
@@ -60,7 +60,7 @@ const Header = () => {
                 <Link href={"/"} onClick={() => setOpen(false)}>Home</Link>
               </li>
               <li>
-                <Link href={"/"} onClick={() => setOpen(false)}>About us</Link>
+                <Link href={"/about-us"} onClick={() => setOpen(false)}>About us</Link>
               </li>
               <li>
                 <Link href={"/"} onClick={() => setOpen(false)}>Project</Link>

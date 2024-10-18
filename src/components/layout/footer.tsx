@@ -28,7 +28,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-primary text-lg tracking-wide font-thin">
             <li>
-              <Link href={"/"}>About Us</Link>
+              <Link href={"/about-us"}>About Us</Link>
             </li>
             <li>
               <Link href={"/"}>Bloc</Link>
