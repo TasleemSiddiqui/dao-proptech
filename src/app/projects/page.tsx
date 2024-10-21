@@ -30,7 +30,7 @@ const Project = () => {
           /* project card */
           projectThumbnail.map((item) => (
           
-              <Card className=" shadow-xl cursor-pointe lg:hover:scale-105 duration-500 ">
+              <Card key={item.id} className=" shadow-xl cursor-pointe lg:hover:scale-105 duration-500 ">
                   
                 <CardHeader className="relative">
                   <Image
