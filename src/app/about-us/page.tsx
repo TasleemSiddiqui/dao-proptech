@@ -87,11 +87,11 @@ const AboutUs = () => {
   return (
     <section className="space-y-4">
       {/* page heading */}
-      <div className=" flex flex-col  justify-center items-center h-fit  md:h-[50vh] text-center  bg-gradient-to-tr from-blue-800 to-teal-400  w-full text-white lg:p-7 p-5">
-        <h1 className="text-2xl md:text-5xl font-bold text-white ">
+      <div className=" flex flex-col  justify-center items-center h-fit  md:h-[50vh] text-center  bg-gradient-to-tr from-blue-800 to-teal-400  w-full text-white lg:p-7 p-10">
+        <h1 className="text-2xl font-extrabold md:text-5xl lg:font-bold text-white ">
           About DAO Proptech
         </h1>
-        <p className="text-base md:text-xl text-white font-normal max-w-2xl  md:mt-5">
+        <p className="text-base md:text-xl text-white font-normal max-w-2xl line-clamp-3  md:mt-5">
           In 2020, DAO PropTech was founded with the simple mission of making
           everyone a part of a fair and inclusive real estate ecosystem
         </p>
