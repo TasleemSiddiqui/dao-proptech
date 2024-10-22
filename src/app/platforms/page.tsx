@@ -132,7 +132,7 @@ const Platform = () => {
         </div>
       </div>
       {/* section 3rd */}
-      <div className="flex lg:flex-row flex-col-reverse bg-slate-50 py-[10%]">
+      <div className="flex lg:flex-row flex-col-reverse py-[10%]">
         <div className="flex-1  flex justify-center items-center">
           <Image
             src={"/platforms/scientific-pricing-1.png"}
